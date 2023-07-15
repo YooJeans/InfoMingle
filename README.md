@@ -1,7 +1,8 @@
 # InfoMingle
 News Wordcloud Service
 
-# git clone 하기
+# git clone 하기(in git Bash)
+https://docs.github.com/ko/repositories/creating-and-managing-repositories/cloning-a-repository 참고
 
 # fork 연결
 
