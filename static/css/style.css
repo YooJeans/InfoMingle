@@ -1,0 +1,119 @@
+@font-face {
+    font-family: 'NanumGothic';
+    src: url('https://hangeul.pstatic.net/hangeul_static/css/nanum-gothic.css') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+header {
+    background-color: white;
+    width: 1920px;
+    height: 80px;
+}
+
+header .header-link {
+    font-family: 'NanumGothic', sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    color: black;
+    padding: 24px 0 0 30px;
+    position: absolute;
+}
+
+header .header-logo {
+    width: 195px; height: 56px;
+    padding: 10px 0 0 30px;
+}
+
+body {
+    font-family: 'NanumGothic', sans-serif;
+    font-weight: bold;
+    margin: 0px;
+}
+
+body .use-info-content {
+    padding: 110px;
+}
+
+body .use-info-title {
+    background-color: #5D7A9E;
+    width: 1920px;
+    height: 276px;
+    font-size: 35px;
+    color: white;
+    text-align: center;
+}
+
+body .description-box {
+    background-color: #E7F3F8;
+    width: 1581px;
+    height: 150px;
+    border-radius: 10px;
+    padding: 30px;
+    align-content: center;
+    margin-bottom: 114px;
+}
+
+body .description-title {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+body .description {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+body .use-info-banner {
+    width: 1641px;
+    height: 848px;
+}
+
+footer {
+    background-color: #F1F1F1;
+    width: 1920px;
+    height: 250px;
+}
+
+footer .footer-content {
+    padding: 0 0 0 700px;
+}
+
+footer div {
+    display: inline;
+}
+
+.footer-logo {
+    width: 228px;
+    height: 72px;
+    margin: 106px 0 0 0;
+}
+
+.footer-divider {
+  border-left : 3px solid black;
+  height : 45px;
+  margin-left: 200px;
+  margin-top: 122px;
+  position: absolute;
+}
+
+.footer-dev-name {
+    position: absolute;
+    padding: 120px 0 0 45px;
+}
+
+.footer-dev-name-2 {
+    position: absolute;
+    padding: 150px 0 0 45px;
+}
+
+.email {
+  position: absolute;
+  margin-left: 220px;
+  margin-top: 119px;
+}
+.email-2 {
+  position: absolute;
+  margin-left: 220px;
+  margin-top: 149px;
+}
