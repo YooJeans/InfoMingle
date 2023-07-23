@@ -1,110 +1,259 @@
 @font-face {
-    font-family: 'NanumGothic';
-    src: url('https://hangeul.pstatic.net/hangeul_static/css/nanum-gothic.css') format('woff');
-    font-weight: bold;
-    font-style: normal;
+  font-family: "NanumGothic";
+  src: url("https://hangeul.pstatic.net/hangeul_static/css/nanum-gothic.css")
+    format("woff");
+  font-weight: bold;
+  font-style: normal;
 }
 
 header {
-    background-color: white;
-    width: 1920px;
-    height: 80px;
+  background-color: white;
+  width: 1920px;
+  height: 80px;
 }
 
 header .header-link {
-    font-family: 'NanumGothic', sans-serif;
-    font-weight: bold;
-    font-size: 25px;
-    color: black;
-    padding: 24px 0 0 30px;
-    position: absolute;
+  font-family: "NanumGothic", sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+  color: black;
+  padding: 24px 0 0 30px;
+  position: absolute;
 }
 
 header .header-logo {
-    width: 195px; height: 56px;
-    padding: 10px 0 0 30px;
+  width: 195px;
+  height: 56px;
+  padding: 10px 0 0 30px;
 }
 
 body {
-    font-family: 'NanumGothic', sans-serif;
-    font-weight: bold;
-    margin: 0px;
+  font-family: "NanumGothic", sans-serif;
+  font-weight: bold;
+  margin: 0px;
 }
 
 body .use-info-content {
-    padding: 110px;
+  padding: 110px;
 }
 
 body .use-info-title {
-    background-color: #5D7A9E;
-    width: 1920px;
-    height: 276px;
-    font-size: 35px;
-    color: white;
-    text-align: center;
+  background-color: #5d7a9e;
+  width: 1920px;
+  height: 276px;
+  font-size: 35px;
+  color: white;
+  text-align: center;
 }
 
 body .description-box {
-    background-color: #E7F3F8;
-    width: 1581px;
-    height: 150px;
-    border-radius: 10px;
-    padding: 30px;
-    align-content: center;
-    margin-bottom: 114px;
+  background-color: #e7f3f8;
+  width: 1581px;
+  height: 150px;
+  border-radius: 10px;
+  padding: 30px;
+  align-content: center;
+  margin-bottom: 114px;
 }
 
 body .description-title {
-    font-size: 35px;
-    margin-bottom: 20px;
+  font-size: 35px;
+  margin-bottom: 20px;
 }
 
 body .description {
-    font-size: 20px;
-    margin-bottom: 30px;
+  font-size: 20px;
+  margin-bottom: 30px;
 }
 
 body .use-info-banner {
-    width: 1641px;
-    height: 848px;
+  width: 1641px;
+  height: 848px;
+}
+
+body .main-body-logo {
+  width: 350px;
+  height: 110px;
+  align-content: center;
+}
+
+body .main-title {
+  width: 1920px;
+  height: 330px;
+  font-size: 35px;
+  color: white;
+  text-align: center;
+}
+
+body {
+  /* 베걍이미지 크기 조정*/
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+body .main-content {
+  padding-left: 150px;
+  padding-right: 150px;
+  padding-bottom: 150px;
+}
+
+body .main-inner {
+  width: 1920px;
+  margin: auto;
+  padding: 110px;
+  padding-top: 10px;
+  padding-left: 10px;
+  border-radius: 10px;
+}
+
+body .main-banner-box {
+  float: left;
+  width: 1000px;
+  height: 700px;
+  border-radius: 10px;
+}
+
+body .main-banner-box-big {
+  display: inline-block;
+  width: 691px;
+  height: 60px;
+}
+
+body .main-banner-box-topic {
+  /* width: ; */
+  height: 50px;
+  color: black;
+  display: inline-block;
+  padding: 8px;
+  background-color: #d9d9d9;
+  border-radius: 10px;
+  font-size: 40px;
+}
+
+body .main-banner-box-small {
+  color: black;
+  display: inline-block;
+  padding-top: 10px;
+}
+
+body .main-banner-box-topic-under {
+  color: black;
+  display: inline-block;
+  padding: 2px;
+  border-radius: 10px;
+  margin-left: 5px;
+  font-size: 20px;
+}
+
+body .main-banner-box-img {
+  padding-top: 30px;
+  width: 850px;
+  height: auto;
+}
+
+body .main-ranking-box {
+  display: inline-block;
+}
+
+body .main-ranking-box-border {
+  border: 5px solid #e8e8e8;
+  border-radius: 15px;
+  background-color: #f9f9f9;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+body .main-ranking-box-border-numNtext {
+  width: auto;
+  height: 50px;
+  text-align: left;
+  padding-top: 25px;
+  padding-left: 25px;
+  padding-right: 200px;
+}
+
+body .main-ranking-box-border-number {
+  display: inline-block;
+  padding: 2px;
+  color: black;
+  width: 50px;
+  height: 50px;
+  background-color: #e8e8e8;
+  border-radius: 10px;
+  margin-right: 15px;
+  font-size: 40px;
+  text-align: center;
+}
+
+body .main-ranking-box-border-text {
+  color: black;
+  display: inline-block;
+  padding: 2px;
+  font-size: 35px;
+}
+
+body .main-wordcloud {
+  width: 1920px;
+  margin: auto;
+  padding: 110px;
+  padding-top: 10px;
+  padding-left: 10px;
+  border-radius: 10px;
+}
+
+body .main-wordcloud-border {
+  border: 5px solid #e8e8e8;
+  border-radius: 15px;
+  background-color: #fdfdfd;
+}
+
+body .main-wordcloud-date {
+  font-size: small;
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }
 
 footer {
-    background-color: #F1F1F1;
-    width: 1920px;
-    height: 250px;
+  align-content: bottom;
+  background-color: #f1f1f1;
+  width: 1920px;
+  height: 250px;
 }
 
 footer .footer-content {
-    padding: 0 0 0 700px;
+  padding: 0 0 0 700px;
 }
 
 footer div {
-    display: inline;
+  display: inline;
 }
 
 .footer-logo {
-    width: 228px;
-    height: 72px;
-    margin: 106px 0 0 0;
+  width: 228px;
+  height: 72px;
+  margin: 106px 0 0 0;
 }
 
 .footer-divider {
-  border-left : 3px solid black;
-  height : 45px;
+  border-left: 3px solid black;
+  height: 45px;
   margin-left: 200px;
   margin-top: 122px;
   position: absolute;
 }
 
 .footer-dev-name {
-    position: absolute;
-    padding: 120px 0 0 45px;
+  position: absolute;
+  padding: 120px 0 0 45px;
 }
 
 .footer-dev-name-2 {
-    position: absolute;
-    padding: 150px 0 0 45px;
+  position: absolute;
+  padding: 150px 0 0 45px;
 }
 
 .email {
