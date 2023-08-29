@@ -1,13 +1,15 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="ko">
   <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" type="text/css" href="/static/css/style.css" />
+{#    <link rel="stylesheet" type="text/css" href="/css/style.css" />#}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
     <title>InfoMingle</title>
   </head>
   <header>
     <a href="main.html"
-      ><img class="header-logo" src="/static/images/infomingle_logo.png"
+      ><img class="header-logo" src="{% static '/images/infomingle_logo.png' %}"
     /></a>
     <a href="information.html" style="text-decoration: none"
       ><span class="header-link">이용안내</span></a
@@ -16,11 +18,11 @@
       ><span class="header-link">기사 요약</span></a
     >
   </header>
-  <body background="/static/images/background.png">
+  <body background="{% static '/images/background.png' %}">
     <div class="main-title">
       <span style="position: absolute; padding: 115px 0 40px 0">
         <a href="main.html"
-          ><img class="main-body-logo" src="/static/images/infomingle_logo.png"
+          ><img class="main-body-logo" src="{% static '/images/infomingle_logo.png' %}"
         /></a>
       </span>
     </div>
@@ -46,7 +48,7 @@
               <div class="main-banner-box-topic">IT/과학</div>
             </a>
             <a href="main-world.html">
-              <div class="main-banner-box-topic-selected">세계</div>
+              <div class="main-banner-box-topic">세계</div>
             </a>
           </div>
           <div class="main-banner-box-small">
@@ -71,7 +73,7 @@
           </div>
           <img
             class="main-banner-box-img"
-            src="/static/images/main-banner.png"
+            src="{% static '/images/main-banner.png' %}"
           />
         </div>
         <div class="main-ranking-box">
@@ -128,76 +130,87 @@
           </div>
         </div>
       </div>
-      <div class="main-wordcloud">
-        <div class="main-wordcloud-title">
-          워드클라우드
-          <div class="main-wordcloud-date" text-aligen="right">
-            <img
-              class="main-wordcloud-calender"
-              src="/static/images/calender.png"
-            />
-            <script>
-              const today = new Date();
-              const lastweek = new Date();
-              function formatDate(date, format) {
-                const map = {
-                  mm: date.getMonth() + 1,
-                  dd: date.getDate(),
-                  yy: date.getFullYear().toString().slice(-2),
-                  yyyy: date.getFullYear(),
-                };
-
-                return format.replace(
-                  /mm|dd|yy|yyy/gi,
-                  (matched) => map[matched]
-                );
-              }
-              formatDate(today, "mm/dd/yy");
-              date = new Date().toLocaleDateString();
-              document.write(
-                " " +
-                  today.getFullYear() +
-                  "-" +
-                  today.getMonth() +
-                  "-" +
-                  (today.getDate() - 7) +
-                  " ~ " +
-                  today.getFullYear() +
-                  "-" +
-                  today.getMonth() +
-                  "-" +
-                  today.getDate()
-              );
-            </script>
-          </div>
+{#      <div class="main-wordcloud">#}
+{#        <div class="main-wordcloud-title">#}
+{#          워드클라우드#}
+{#          <div class="main-wordcloud-date" text-aligen="right">#}
+{#            <img#}
+{#              class="main-wordcloud-calender"#}
+{#              src="{% static '/images/calender.png' %}"#}
+{#            />#}
+{#            <script>#}
+{#              const today = new Date();#}
+{#              const lastweek = new Date();#}
+{#              function formatDate(date, format) {#}
+{#                const map = {#}
+{#                  mm: date.getMonth() + 1,#}
+{#                  dd: date.getDate(),#}
+{#                  yy: date.getFullYear().toString().slice(-2),#}
+{#                  yyyy: date.getFullYear(),#}
+{#                };#}
+{##}
+{#                return format.replace(#}
+{#                  /mm|dd|yy|yyy/gi,#}
+{#                  (matched) => map[matched]#}
+{#                );#}
+{#              }#}
+{#              formatDate(today, "mm/dd/yy");#}
+{#              date = new Date().toLocaleDateString();#}
+{#              document.write(#}
+{#                " " +#}
+{#                  today.getFullYear() +#}
+{#                  "-" +#}
+{#                  today.getMonth() +#}
+{#                  "-" +#}
+{#                  (today.getDate() - 7) +#}
+{#                  " ~ " +#}
+{#                  today.getFullYear() +#}
+{#                  "-" +#}
+{#                  today.getMonth() +#}
+{#                  "-" +#}
+{#                  today.getDate()#}
+{#              );#}
+{#            </script>#}
+{#          </div>#}
+{#        </div>#}
+{#        <div class="main-wordcloud-date"></div>#}
+{#        <div class="main-wordcloud-border">#}
+{#          <div class="main-wordcloud-categori-box">#}
+{#            <div class="main-wordcloud-categori">#}
+{#              <img src="{% static '/images/blue-dot.png' %}" /> 인물#}
+{#            </div>#}
+{#            <div class="main-wordcloud-categori">#}
+{#              <img src="{% static '/images/red-dot.png' %}" /> 장소#}
+{#            </div>#}
+{#            <div class="main-wordcloud-categori">#}
+{#              <img src="{% static '/images/green-dot.png' %}" /> 기관#}
+{#            </div>#}
+{#          </div>#}
+{#          <div class="main-wordcloud-img-box">#}
+{#            <img#}
+{#              class="main-wordcloud-img"#}
+{#              src="{% static '/images/wordcloud-img.png' %}"#}
+{#            />#}
+{#          </div>#}
+{#        </div>#}
+{#      </div>#}
+    <h1>뉴스 목록</h1>
+    <p>검색 개수: {{ total }}</p>
+    <hr>
+    {% for item in items %}
+        <div>
+            <img src="{{ item.urlToImage }}" alt="Thumbnail">
+            <p>날짜: {{ item.publishedAt }}</p>
+            <p>원문 링크: <a href="{{ item.url }}" target="_blank">{{ item.url }}</a></p>
+            <hr>
         </div>
-        <div class="main-wordcloud-date"></div>
-        <div class="main-wordcloud-border">
-          <div class="main-wordcloud-categori-box">
-            <div class="main-wordcloud-categori">
-              <img src="/static/images/blue-dot.png" /> 인물
-            </div>
-            <div class="main-wordcloud-categori">
-              <img src="/static/images/red-dot.png" /> 장소
-            </div>
-            <div class="main-wordcloud-categori">
-              <img src="/static/images/green-dot.png" /> 기관
-            </div>
-          </div>
-          <div class="main-wordcloud-img-box">
-            <img
-              class="main-wordcloud-img"
-              src="/static/images/wordcloud-img.png"
-            />
-          </div>
-        </div>
-      </div>
+    {% endfor %}
     </div>
   </body>
   <footer>
     <div class="footer-content">
       <div>
-        <img class="footer-logo" src="/static/images/infomingle_logo.png" />
+        <img class="footer-logo" src="{% static '/images/infomingle_logo.png' %}" />
       </div>
       <div class="footer-dev-name">202020954 오유진</div>
       <div class="footer-dev-name-2">202020845 김성혜</div>
