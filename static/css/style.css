@@ -116,7 +116,7 @@ body .main-banner-box {
 
 body .main-banner-box-big {
   display: inline-block;
-  width: 691px;
+  width: 850px;
   height: 60px;
 }
 
@@ -126,19 +126,45 @@ body .main-banner-box-topic {
   color: black;
   display: inline-block;
   padding: 8px;
+  padding-left: 13px;
+  padding-right: 13px;
   background-color: #d9d9d9;
   border-radius: 10px;
   font-size: 40px;
+  margin-right: 5px;
+}
+
+body .main-banner-box-topic-selected {
+  /* width: ; */
+  height: 50px;
+  color: white;
+  display: inline-block;
+  padding: 8px;
+  padding-left: 13px;
+  padding-right: 13px;
+  border-radius: 10px;
+  background: #85aee0;
+  font-size: 40px;
+  margin-right: 5px;
 }
 
 body .main-banner-box-small {
   color: black;
   display: inline-block;
-  padding-top: 10px;
+  padding-top: 15px;
 }
 
 body .main-banner-box-topic-under {
   color: black;
+  display: inline-block;
+  padding: 2px;
+  border-radius: 10px;
+  margin-left: 5px;
+  font-size: 20px;
+}
+
+body .main-banner-box-topic-under-selected {
+  color: #85aee0;
   display: inline-block;
   padding: 2px;
   border-radius: 10px;
@@ -194,22 +220,194 @@ body .main-ranking-box-border-text {
 }
 
 body .main-wordcloud {
-  width: 1920px;
+  width: 1450px;
   margin: auto;
-  padding: 110px;
   padding-top: 10px;
-  padding-left: 10px;
+  /* padding-left: 10px; */
   border-radius: 10px;
 }
 
 body .main-wordcloud-border {
+  margin-top: 15px;
   border: 5px solid #e8e8e8;
   border-radius: 15px;
   background-color: #fdfdfd;
+  padding: 110px;
+  padding-top: 80px;
+}
+
+body .main-wordcloud-title {
+  justify-content: space-between;
+  font-size: 35px;
+  width: 1450px;
+  /* padding: 10px; */
+}
+
+body .main-wordcloud-calender {
+  margin-top: 10px;
 }
 
 body .main-wordcloud-date {
-  font-size: small;
+  margin-top: 5px;
+  float: right;
+  justify-content: space-between;
+  margin-right: 20px;
+  font-size: 25px;
+  text-align: right;
+}
+
+body .main-wordcloud-categori-box {
+  font-size: 22px;
+  text-align: right;
+  padding-bottom: 60px;
+}
+
+body .main-wordcloud-categori {
+  display: inline-block;
+  font-size: 22px;
+  text-align: right;
+  padding-left: 30px;
+}
+
+body .main-wordcloud-img-box {
+  /* width: 882px;
+  height: auto; */
+  text-align: center;
+}
+
+body .main-wordcloud-img {
+  width: 882px;
+  height: auto;
+  /* text-align: center; */
+}
+
+body .filter-inner {
+  margin: 100px 130px 115px 130px;
+}
+
+body .filter-gray-box {
+  border-radius: 10px;
+  background: #e4e4e4;
+  width: 1660px;
+  height: 96px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+body .filter-blue-box {
+  border-radius: 10px;
+  background: #9ecaf2;
+  width: 1660px;
+  height: 96px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+/*filter*/
+
+body .filter-box-text {
+  /* margin-top: 16px; */
+  margin-left: 68px;
+  font-size: 36px;
+}
+
+body .main-banner-box {
+  float: left;
+  width: 1000px;
+  height: 700px;
+  border-radius: 10px;
+}
+
+body .filter-content-box {
+  display: flex;
+  width: 1660px;
+}
+
+body .filter-content-box-left {
+  float: left;
+  width: 375px;
+}
+
+body .filter-content-box-text {
+  font-size: 32px;
+  margin-left: 8px;
+}
+
+body .filter-content-box-left-filtering {
+  margin-top: 14px;
+  border-radius: 15px;
+  border: 5px solid #e8e8e8;
+  background: #f9f9f9;
+  width: 375px;
+  height: 450px;
+  flex-shrink: 0;
+  position: relative;
+}
+
+body .filter-content-box-left-filtering-title {
+  font-size: 32px;
+  padding-top: 25px;
+  padding-left: 40px;
+}
+
+body .filter-content-box-left-filtering-line {
+  position: absolute;
+  top: 81.5px;
+  width: 375px;
+  height: 1px;
+  background: #ddd;
+}
+
+body .filter-content-box-left-filtering-checkbox-area {
+  position: absolute;
+  top: 129px;
+  left: 40px;
+  align-items: center;
+}
+
+body .filter-content-box-left-filtering-checkbox-area-box {
+  display: flex;
+  align-items: center;
+}
+
+body .filter-content-box-left-filtering-checkbox-area-checkbox {
+  width: 54px;
+  height: 49px;
+  flex-shrink: 0;
+  border: 1px solid #e8e8e8;
+  background: #fff;
+}
+
+body .filter-content-box-left-filtering-checkbox-label {
+  margin-left: 23px;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+body .filter-content-box-left-filtering-checkbox-text {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  right: 25px;
+}
+
+body .filter-content-right-box {
+  display: inline-block;
+  margin-left: 78px;
+  width: 885px;
+}
+
+body .filter-content-right-box-title {
+  margin-bottom: 53px;
+  font-size: 32px;
+  /* display: inline; */
+}
+
+body .filter-content-right-box-image {
+  max-width: 100%;
+  height: auto;
 }
 
 a {
