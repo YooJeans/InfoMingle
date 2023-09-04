@@ -16,8 +16,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from MAIN.views import news_list
+from filter_search.views import category_news_list
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', news_list, name='main_page'),
+    path('category_news/', category_news_list, name='category_news_page'),
 ]
