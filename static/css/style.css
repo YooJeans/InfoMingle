@@ -396,8 +396,7 @@ body .filter-content-box-left-filtering-checkbox-text {
 
 body .filter-content-right-box {
   display: inline-block;
-  margin-left: 78px;
-  width: 885px;
+  /*margin-left: 78px;*/
 }
 
 body .filter-content-right-box-title {
