@@ -43,13 +43,13 @@ body .use-info-content {
 
 body .use-info-title {
   background-color: #5d7a9e;
-  width: 1920px;
+  /*width: 1920px;*/
   height: 276px;
   font-size: 35px;
   color: white;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /*justify-content: center;*/
   align-items: center;
 }
 
