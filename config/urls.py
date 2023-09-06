@@ -17,9 +17,14 @@ from django.contrib import admin
 from django.urls import path
 from MAIN.views import news_list
 from filter_search.views import category_news_list
+# from use_info.views import use_info
+# from filter_search.views import category_news_list
+from MAIN.views import word_cloud
+from MAIN import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', news_list, name='main_page'),
     path('category_news/', category_news_list, name='category_news_page'),
+    path('word_cloud/', views.word_cloud, name='word_cloud'),  # URL 패턴 수정
 ]
