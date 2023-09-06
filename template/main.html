@@ -17,14 +17,14 @@
     <a href="summary.html" style="text-decoration: none; padding-left: 130px">
         <span class="header-link">기사 요약</span>
     </a>
-    <a href="category_news/" style="text-decoration: none; padding-left: 130px">
+    <a href="{% url 'category_news_page' %}" style="text-decoration: none; padding-left: 130px">
         <span class="header-link">카테고리 뉴스</span>
     </a>
   </header>
   <body background="{% static '/images/background.png' %}">
     <div class="main-title">
       <span style="position: absolute; padding: 0 0 40px 0">
-        <a href="main.html"
+        <a href="/"
           ><img class="main-body-logo" src="{% static '/images/infomingle_logo.png' %}"
         /></a>
       </span>
